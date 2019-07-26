@@ -1,0 +1,37 @@
+.card-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #777777
+}
+
+.get-drink-div{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.card-text{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-mod{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    background-color: aqua;
+}
