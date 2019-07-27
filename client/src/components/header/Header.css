@@ -1,7 +1,12 @@
-.navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
+.navbar{
+    background-color: #888888;
+    display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
-.navbar-brand {float:none;}
+
+.navbar-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

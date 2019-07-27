@@ -4,9 +4,9 @@ import "./Header.css"
 function Header(){
     return(
     <div>
-        <nav class="navbar navbar-light bg-light" role="navigation">
-            <div class="navbar-header">
-                <a className="navbar-brand">DrunkPass</a>
+        <nav className="navbar navbar-default" role="navigation">
+            <div className="navbar-header">
+                <h1 className="navbar-brand">DrunkPass</h1>
             </div>
         </nav>
     </div>
