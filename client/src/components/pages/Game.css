@@ -1,0 +1,17 @@
+.game-div{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.btn-mod{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    background-color: aqua;
+}
