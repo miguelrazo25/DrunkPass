@@ -22,7 +22,12 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
-
+app.get("/game", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/public/game.html"));
+});
+app.get("scores", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/public/scores.html"));
+});
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
