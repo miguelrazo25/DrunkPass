@@ -28,6 +28,7 @@ app.get("/game", (req, res) => {
 app.get("scores", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/public/scores.html"));
 });
+
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
