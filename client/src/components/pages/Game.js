@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
 import Header from '../header/Header';
+import '../pages/Game.css'
 var randomWords = require('random-words');
 
 class Game extends Component {
@@ -43,6 +44,9 @@ class Game extends Component {
 		console.log(getRandomWord)
 		//show word to user
 		//hide word and let the user type it.
+		setTimeout( () =>{
+			document.getElementById("word-text").remove()
+		},5000)
 
 	}
 
@@ -61,7 +65,7 @@ class Game extends Component {
 					</div>
 					<form onSubmit={this.handleSubmit}>
 						<div className="card-body">
-							<h5 className="card-title">{this.state.word}</h5>
+							<h5 className="card-title" id="word-text">{this.state.word}</h5>
 							<input className="form-control form-control-lg" type="text" value={this.state.userInput} onChange={this.handleInputChange} placeholder="Type the Word"></input>
 							<button type="submit" className="btn btn-mod">Submit</button>
 						</div>
