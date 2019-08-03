@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/my_database";
 
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
-
+console.log('MONGODB_URI');
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
