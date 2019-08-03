@@ -31,7 +31,7 @@ class GetDrink extends Component {
                                 <img src={this.state.drinks.strDrinkThumb} alt="drink" />
                                 <p className="card-text">Ingredients: {this.state.drinks.strIngredient1} {this.state.drinks.strIngredient2} {this.state.drinks.strIngredient3} {this.state.drinks.strIngredient4} {this.state.drinks.strIngredient5} {this.state.drinks.strIngredient6}</p>
                                 <p className="card-text">Instructions: {this.state.drinks.strInstructions}</p>
-                                <a className="btn btn-mod">Drink and type</a>
+                                <button className="btn btn-mod">Drink and type</button>
                             </div>
                         </div>
                     </div>
