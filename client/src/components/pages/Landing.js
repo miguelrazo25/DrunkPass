@@ -73,6 +73,7 @@ class Landing extends React.Component {
               name="name"
               className="form-control"
               placeholder="Your Name"
+              onChange={this.inputChange}
             />
           </label>
           <br />
@@ -83,6 +84,7 @@ class Landing extends React.Component {
               name="email"
               className="form-control"
               placeholder="Your email"
+              onChange={this.inputChange}
             />
           </label>
           <br />
