@@ -19,7 +19,6 @@ class Landing extends React.Component {
 
   inputChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-    console.log(event.target.value);
   };
 
   handleSubmit = event => {
@@ -73,6 +72,7 @@ class Landing extends React.Component {
               name="name"
               className="form-control"
               placeholder="Your Name"
+              onChange={this.inputChange}
             />
           </label>
           <br />
@@ -83,6 +83,7 @@ class Landing extends React.Component {
               name="email"
               className="form-control"
               placeholder="Your email"
+              onChange={this.inputChange}
             />
           </label>
           <br />
