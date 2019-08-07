@@ -2,6 +2,9 @@ import React from "react";
 import "./Landing.css";
 import { Redirect } from "react-router-dom";
 import Header from "../header/Header";
+
+
+
 const axios = require("axios");
 const moment = require("moment");
 
@@ -63,6 +66,7 @@ class Landing extends React.Component {
 
     return (
       <div>
+
         <Header />
         <form onSubmit={this.handleSubmit} className="contaner">
           <label>
@@ -102,6 +106,8 @@ class Landing extends React.Component {
           <br />
           <input type="submit" value="Submit" />
         </form>
+        <img src="/images/drunk1.jpg" width="50%" height="50%"/>
+        <img src="/images/drunk2.jpg" width="50%" height="50%"/>
       </div>
     );
   }
