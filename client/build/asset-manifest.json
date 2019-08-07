@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e0125ad3.chunk.css",
-    "main.js": "/static/js/main.fde83acf.chunk.js",
-    "main.js.map": "/static/js/main.fde83acf.chunk.js.map",
+    "main.js": "/static/js/main.b908ab2f.chunk.js",
+    "main.js.map": "/static/js/main.b908ab2f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.0c63908e.chunk.js": "/static/js/2.0c63908e.chunk.js",
     "static/js/2.0c63908e.chunk.js.map": "/static/js/2.0c63908e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.44a5f17c606e21ca4d4a9d76ab6d07d5.js": "/precache-manifest.44a5f17c606e21ca4d4a9d76ab6d07d5.js",
+    "precache-manifest.688554f147e7f4f685e88690256b3527.js": "/precache-manifest.688554f147e7f4f685e88690256b3527.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.e0125ad3.chunk.css.map": "/static/css/main.e0125ad3.chunk.css.map",
     "static/media/palm.png": "/static/media/palm.df6ed8bf.png"
