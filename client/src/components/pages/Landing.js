@@ -36,9 +36,12 @@ class Landing extends React.Component {
             dob: this.state.dob
           })
           .then(response => {
+            window.localStorage.setItem('userId', response.data._id);
+            window.localStorage.setItem('username', this.state.name);
+            window.localStorage.setItem('userscore', 0);
             this.setState({ routeToGame: true });
           })
-          .catch(function(error) {
+          .catch(function (error) {
             console.log(error);
           });
       })
@@ -66,7 +69,6 @@ class Landing extends React.Component {
 
     return (
       <div>
-
         <Header />
         <form onSubmit={this.handleSubmit} className="contaner">
           <label>
@@ -106,8 +108,8 @@ class Landing extends React.Component {
           <br />
           <input type="submit" value="Submit" />
         </form>
-        <img src="/images/drunk1.jpg" width="50%" height="50%"/>
-        <img src="/images/drunk2.jpg" width="50%" height="50%"/>
+        <img src="/images/drunk1.jpg" width="50%" height="50%" />
+        <img src="/images/drunk2.jpg" width="50%" height="50%" />
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import Header from '../header/Header';
 import '../pages/Game.css'
@@ -11,19 +12,37 @@ class Game extends Component {
 			score: 0,
 			word: "",
 			userInput: "",
-			redirectToDrink: false
+			redirectToDrink: false,
+			user: null,
+			tooDrunk: false
 		};
 	}
 
+	componentDidMount() {
+		this.word();
+		const user = window.localStorage.getItem('username');
+		const score = window.localStorage.getItem('userscore');
+
+		if (user) {
+			this.setState({ user })
+		}
+
+		if (score) {
+			this.setState({ score: parseInt(score) })
+		}
+	}
 
 	handleSubmit = event => {
 		event.preventDefault()
-		console.log(`${this.state.userInput}`)
-		console.log(`${this.state.word}`)
-		if (this.state.word === this.state.userInput){
+		if (this.state.word === this.state.userInput) {
+			window.localStorage.setItem('userscore', parseInt(this.state.score + 1));
 			this.setState({ redirectToDrink: true })
 		} else {
-			console.log('no')
+			this.setState({ tooDrunk: true });
+			const userId = window.localStorage.getItem('userId');
+			const oldScore = window.localStorage.getItem('userscore');
+			axios.patch('/users', { id: userId, score: oldScore })
+			window.localStorage.setItem('userscore', 0);
 		}
 	}
 
@@ -33,9 +52,6 @@ class Game extends Component {
 		})
 	}
 
-	componentDidMount(){
-		this.word();
-	}
 
 	word = () => {
 		// get word
@@ -44,21 +60,28 @@ class Game extends Component {
 		console.log(getRandomWord)
 		//show word to user
 		//hide word and let the user type it.
-		setTimeout( () =>{
-			document.getElementById("word-text").remove()
-		},5000)
+		setTimeout(() => {
+			const el = document.getElementById("word-text")
+			if (el) {
+				el.remove()
+			}
+		}, 3000)
 
 	}
 
 
 	render() {
-		if(this.state.redirectToDrink) {
+		if (this.state.redirectToDrink) {
 			return <Redirect to="/drink" />
 		}
 
-		return(
+		if (this.state.tooDrunk) {
+			return <div><p>Too Drunk, Drink Some Water!</p></div>
+		}
+
+		return (
 			<div>
-				<Header />
+				<Header score={this.state.score} />
 				<div className="card game-div">
 					<div className="card-header">
 						Type the Word
@@ -71,7 +94,6 @@ class Game extends Component {
 						</div>
 					</form>
 				</div>
-
 			</div>
 		)
 	}

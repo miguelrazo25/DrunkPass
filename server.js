@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/my_database";
 const db = require('./models/index')
 
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 console.log('MONGODB_URI');
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -20,15 +20,26 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every other request to the React app
 // Define any API routes before this runs
-app.post("/users",(req,res) => {
+app.post("/users", (req, res) => {
   db.user.create({
     name: req.body.name,
-    email: req.body.email
+    email: req.body.email,
+    score: 0
   }).then(user => {
-    return res.sendStatus(201);
+    return res.status(201).json(user)
   }).catch(err => {
     res.sendStatus(500);
   });
+})
+
+app.patch("/users", function (req, res) {
+  db.user.findByIdAndUpdate(req.body.id, {
+    score: req.body.score
+  }).then(() => {
+    res.sendStatus(200)
+  }).catch(err => {
+    res.sendStatus(500);
+  })
 })
 
 app.get("*", (req, res) => {
