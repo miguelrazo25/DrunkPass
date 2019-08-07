@@ -76,7 +76,7 @@ class Game extends Component {
 		}
 
 		if (this.state.tooDrunk) {
-			return <div><p>Too Drunk, Drink Some Water!</p></div>
+			return <div className="test"><p>Too Drunk, Drink Some Water!</p></div>
 		}
 
 		return (
