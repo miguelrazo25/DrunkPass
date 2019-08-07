@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently 'npm run server' 'npm run client'",
     "server": "nodemon server.js",
-    "install": "cd client && npm install",
     "client": "cd client && npm start",
-    "start": "node server.js",
-    "build": "cd client && npm run build"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +22,8 @@
   "homepage": "https://github.com/miguelrazo25/do-not-trust-us-with-your-passwords#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.6.7"
+    "mongoose": "^5.6.7",
+    "react-input-calendar": "^0.5.4"
   },
   "devDependencies": {
     "concurrently": "^4.1.1",
