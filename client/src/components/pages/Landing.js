@@ -100,7 +100,7 @@ class Landing extends React.Component {
               value={this.state.dob}
               onChange={this.inputChange}
             />
-            {this.state.ageErr ? <div>You must be 21 or older!</div> : ""}
+            {this.state.ageErr ? <div><h3>You must be 21 or older!</h3></div> : ""}
           </label>
 
           <br />
