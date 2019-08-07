@@ -9,7 +9,10 @@ function Header(props) {
         <div className="navbar-header">
           <img className="imgSize" src={Palms} />
           <h1 className="navbar-brand">DrunkPass</h1>
-          <span style={{ display: 'block', textAlign: 'center', fontSize: '25px', color: 'green'}} >score: {props.score}</span>
+          {props.score ? 
+            (<span style={{ display: 'block', textAlign: 'center', fontSize: '25px', color: 'yellow'}} >score: {props.score}</span>)
+            : ""
+            }
         </div>
       </nav>
     </div>
