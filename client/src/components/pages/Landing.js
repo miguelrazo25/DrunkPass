@@ -2,6 +2,9 @@ import React from "react";
 import "./Landing.css";
 import { Redirect } from "react-router-dom";
 import Header from "../header/Header";
+
+
+
 const axios = require("axios");
 const moment = require("moment");
 
@@ -63,6 +66,7 @@ class Landing extends React.Component {
 
     return (
       <div>
+
         <Header />
         <form onSubmit={this.handleSubmit} className="contaner">
           <label>
@@ -96,12 +100,14 @@ class Landing extends React.Component {
               value={this.state.dob}
               onChange={this.inputChange}
             />
-            {this.state.ageErr ? <div>You must be 21 or older!</div> : ""}
+            {this.state.ageErr ? <div><h3>You must be 21 or older!</h3></div> : ""}
           </label>
 
           <br />
           <input type="submit" value="Submit" />
         </form>
+        <img src="/images/drunk1.jpg" width="50%" height="50%"/>
+        <img src="/images/drunk2.jpg" width="50%" height="50%"/>
       </div>
     );
   }
