@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #888888;
+    background-image: linear-gradient(to right, #ED145A, #ED145A, #F090C0, #F090C0, #22ABC7, #18D8F0, #18C0F0);;
     display: flex;
     width: 100%;
     align-items: center;
@@ -9,4 +9,15 @@
 .navbar-header{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.imgSize{
+    width: 80px;
+    position: relative;
+    right: 500px;
+}
+
+.navbar-brand{
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
 }
