@@ -38,7 +38,26 @@ This application is fynny game which will be determine you either you are drunk 
 [Drunkpass](https://drunkpass.herokuapp.com/)
 
 ### Screenshot
+- Landing Page
 
 ![](client/public/images/Landing.png)
+
+- Verification Page
+
+![](client/public/images/Verification.png)
+
+- Random_words Page 
+
+![](client/public/images/random_word.png)
+
+- Ingredients Page
+
+![](client/public/images/ingredients.png)
+
+
+- Game over playAgain Page
+
+![](client/public/images/playAgain.png)
+
 
 
