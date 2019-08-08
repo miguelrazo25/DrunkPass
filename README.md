@@ -39,6 +39,6 @@ This application is fynny game which will be determine you either you are drunk 
 
 ### Screenshot
 
-
+![](client/public/images/Landing.png)
 
 
