@@ -1,0 +1,26 @@
+.jumbotron{
+    width: 100%;
+    height: 760px;
+    background-image: linear-gradient(to bottom right, #ED145A, #ED145A, #F090C0, #F090C0, #22ABC7, #18D8F0, #18C0F0);
+}
+
+.display-4{
+    font-family: 'Rock Salt', cursive;
+    font-size: 6em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-class{
+    background-color: #ED145A;
+    margin-top: 40px;
+    position: relative;
+    left: 500px;
+    color: white;
+}
+
+.table{
+    margin-top: 100px;
+}

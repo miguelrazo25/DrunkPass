@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Game from './components/pages/Game';
 import Landing from "./components/pages/Landing";
 import GetDrink from './components/pages/GetDrink';
+import GameOver from './components/pages/GameOver';
 import './App.css';
 
 function App() {
   return (
     <div>
       <Router>
+        <Route path="/gameover" component={GameOver} />
         <Route path="/drink" component={GetDrink} />
         <Route path="/game" component={Game} />
         <Route path="/" exact component={Landing} />
