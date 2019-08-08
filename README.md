@@ -22,6 +22,7 @@ This application is fynny game which will be determine you either you are drunk 
 - [x] [React](https://facebook.github.io/create-react-app/docs/getting-started)
 - [x] MongoDB
 - [x] HTML
+- [x] Bootstrap
 - [x] CSS
 
 ## Package Used <br/>
@@ -35,9 +36,10 @@ This application is fynny game which will be determine you either you are drunk 
 
 ### Deployment at herokuapp <br/>
 
-[Drunkpass](https://drunkpass.herokuapp.com/)
+Click here to Play [Drunkpass](https://drunkpass.herokuapp.com/)
 
 ### Screenshot
+
 - Landing Page
 
 ![](client/public/images/Landing.png)
