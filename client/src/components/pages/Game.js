@@ -82,11 +82,11 @@ class Game extends Component {
         <div className="content">
           <Header score={this.state.oldScore} />
           {this.state.oldScore ? (
-            <h2>Your Final Score Is: {this.state.oldScore}</h2>
+            <h1>Your Final Score Is: {this.state.oldScore}</h1>
           ) : (
             ""
           )}
-          <h3>Hay You Are Drunk, Go & Drink Some Water!</h3>
+          <h3>Hey You Are Drunk, Go & Drink Some Water !</h3>
           <div>
             <img src="/images/drunk3.jpg" width="50%" />
           </div>
