@@ -3,8 +3,13 @@
     
         background-color:whitesmoke;
         color:black;
-        padding: 40px;
+        border: 3px solid cornflowerblue;
+        
+        margin: 10px;
         font-family: Arial;
         text-align: center;
+        padding-top: 10px;
+        padding-bottom:20px;
+        
     
 }

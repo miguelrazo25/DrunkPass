@@ -94,7 +94,7 @@ class Landing extends React.Component {
           </label>
           <br />
           <label>
-            DOB:
+            Date Of Birth:
             <input
               type="date"
               name="dob"
@@ -108,8 +108,8 @@ class Landing extends React.Component {
           <br />
           <input type="submit" value="Submit" />
         </form>
-        <img src="/images/drunk1.jpg" width="50%" height="50%" />
-        <img src="/images/drunk2.jpg" width="50%" height="50%" />
+        <img src="/images/drunk1.jpg" width="50%"  />
+        <img src="/images/drunk2.jpg" width="50%" />
       </div>
     );
   }
